@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "paths": {
+      "@finparse/core": ["../core/src/index.ts"],
+      "@finparse/ofx": ["../ofx/src/index.ts"],
+      "@finparse/mt940": ["../mt940/src/index.ts"],
+      "@finparse/camt053": ["../camt053/src/index.ts"],
+      "@finparse/bai2": ["../bai2/src/index.ts"]
+    }
+  },
+  "include": ["src"]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "finparse-monorepo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r --filter './packages/*' build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "pnpm -r exec tsc --noEmit",
+    "changeset": "changeset",
+    "release": "pnpm build && changeset publish",
+    "clean": "pnpm -r exec rm -rf dist"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@vitest/coverage-v8": "^1.6.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.1.0"
+}

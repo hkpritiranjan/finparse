@@ -1,0 +1,37 @@
+{
+  "name": "finparse",
+  "version": "0.1.0",
+  "description": "Parse any bank statement file — OFX, QFX, MT940, CAMT.053, BAI2 — into a unified schema",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
+      "require": { "types": "./dist/index.d.cts", "default": "./dist/index.cjs" }
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "dependencies": {
+    "@finparse/bai2": "workspace:*",
+    "@finparse/camt053": "workspace:*",
+    "@finparse/core": "workspace:*",
+    "@finparse/mt940": "workspace:*",
+    "@finparse/ofx": "workspace:*"
+  },
+  "keywords": ["fintech", "banking", "ofx", "qfx", "mt940", "camt053", "bai2", "finance", "parser", "bank-statement"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hkpritiranjan/finparse.git"
+  },
+  "homepage": "https://github.com/hkpritiranjan/finparse#readme",
+  "bugs": {
+    "url": "https://github.com/hkpritiranjan/finparse/issues"
+  }
+}
