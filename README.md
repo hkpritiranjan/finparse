@@ -1,5 +1,9 @@
 # finparse
 
+[![CI](https://github.com/hkpritiranjan/finparse/actions/workflows/ci.yml/badge.svg)](https://github.com/hkpritiranjan/finparse/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/finparse)](https://www.npmjs.com/package/finparse)
+[![license](https://img.shields.io/npm/l/finparse)](./LICENSE)
+
 Parse any bank statement file into a single, normalised schema — zero runtime dependencies.
 
 ```ts
@@ -145,6 +149,12 @@ try {
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md). Adding a new bank or a new format is a great first contribution.
 
+## Author
+
+**Pritiranjan Swain** — [github.com/hkpritiranjan](https://github.com/hkpritiranjan) · priti2chand@gmail.com
+
+Open to collaborations, sponsorships, and contributions from the fintech and open source community.
+
 ## License
 
-MIT
+MIT © [Pritiranjan Swain](https://github.com/hkpritiranjan)
