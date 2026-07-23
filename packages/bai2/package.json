@@ -8,13 +8,36 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
-      "require": { "types": "./dist/index.d.cts", "default": "./dist/index.cjs" }
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
     }
   },
-  "files": ["dist"],
-  "scripts": { "build": "tsup", "dev": "tsup --watch" },
-  "dependencies": { "@finparse/core": "workspace:*" },
-  "keywords": ["fintech", "banking", "bai2", "cash-management", "finance", "parser"],
-  "license": "MIT"
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "dependencies": {
+    "@finparse/core": "workspace:*"
+  },
+  "keywords": [
+    "fintech",
+    "banking",
+    "bai2",
+    "cash-management",
+    "finance",
+    "parser"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }

@@ -25,6 +25,11 @@
     "@finparse/ofx": "workspace:*"
   },
   "keywords": ["fintech", "banking", "ofx", "qfx", "mt940", "camt053", "bai2", "finance", "parser", "bank-statement"],
+  "author": {
+    "name": "Pritiranjan Swain",
+    "email": "priti2chand@gmail.com",
+    "url": "https://github.com/hkpritiranjan"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
